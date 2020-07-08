@@ -40,4 +40,4 @@ jobs:
         run: npm install -g surge
 
       - name: deploying on surge app
-        run: surge ./build shoe-store-raza-app.surge.sh --token ${{secrets.SURGE_TOKEN}}
+        run: surge ./build http://shoe-store-raza-app.surge.sh --token ${{secrets.SURGE_TOKEN}}
